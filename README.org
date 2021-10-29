@@ -1,0 +1,68 @@
+* DailyKos Homework - Senior Frontend Software Engineer
+
+** Instructions
+
+  - Choose exactly one language between Javascript (ES5 or ES6) or Ruby 2.3 or above. Please do not submit homework using any other language. Choose your strongest language.
+  - Use tools for testing, package management, dependency resolving, etc which you are most familiar for your chosen language above. We are not interested in the specific tooling you use as long as your code is runnable.
+  - You may submit your homework submission creating an archive file of your work and emailing it back to Taryn or creating a fork for this GitLab repository and submitting a pull request to the original repository. For information on GitLab forks and pulling requests please review these docs [[https://docs.gitlab.com/ee/workflow/forking_workflow.html]].
+
+** Rubric
+
+We are looking for the following from the homework assignment:
+  - documentation exists - clear and concise - that describes how to get started running and testing your submission
+  - the test suite you submit has good code coverage for the parts of the code that are relevant to the requested functionality (see [[#part-1-the-basic-problem]] and [[#part-2-the-british-twist]] below for details)
+  - correctness of the executable code and quality of the tests, i.e. does the code give the right answer based on the rules defined in Part 1 and Part 2.
+  - organization of the codebase for the size and scope is neither too overly complex or too minimal
+  - documentation satisfying [[#part-3-document]] is clear and concise.
+
+** Part 1: The basic problem
+
+Write a program that controls a traffic light (traffic control signal). The program should be written to control traffic at
+a four-way intersection, with lights facing to the North, South, East and West on a busy city intersection with two lane
+traffic in either direction. Start with 6 simple phases:
+
+  - Green east/west, Red north/south
+  - Yellow east/west, Red north/south
+  - Red east/west, Red north/south (all red interval)
+  - Green north/south, Red east/west
+  - Yellow north/south, Red east/west
+  - Red east/west, Red north/south (all red interval)
+
+The phases should repeat, and the program should report what color the light is from each direction. Write your code so
+that it can easily be extended in part 2.
+
+** Part 2: The British Twist
+
+In the UK, traffic lights work just a bit differently than they do in the US. There is a period where the signal turns to yellow AND red before the green signal. (The purpose of this is to tell the driver to get ready to go before the light turns green from their direction.) Modify the program that you wrote earlier so that it can be set via a configuration option to work either in the US or the UK. The UK phases should be as follows:
+
+  - Green east/west, Red north/south
+  - Yellow east/west, Red north/south
+  - Red east/west, Yellow + Red north/south
+  - Green north/south, Red east/west
+  - Yellow north/south, Red east/west
+  - Yellow + Red east/west, Red north/south
+
+The phases should still repeat, and the program should still report what color the light is from each direction.
+
+** Part 3: Document
+
+We are looking for the following documentation:
+
+  - 'Getting Started' section that describes how to run your code submission, including what versions of Ruby or Javascript to use and what dependency resolver to use (e.g. Bundler, NPM, YARN, etc)
+  - 'Code Organization' section that describes how you organized your codebase for this homework submission
+  - 'Test Suite' section that describes how to run the test suite
+  - 'Unknowns/Questions' section that lists any unknowns or questions you might have asked Product Management that may have influenced your design or implementation
+
+** Follow-up Interview
+
+The follow up interview will ask questions like how easy or difficult would it be to modify your program to use:
+  - left turn only phases?
+  - add pedestrian lights on all pedestrian crossings?
+  - interface timing with other traffic lights?
+  - report on traffic data via an api?
+  - use induced rather than automatic changes (e.g. change based on sensors)?
+  - have an engineer change the timing patterns via remote access?
+
+** Summary
+
+Please make sure to follow the [[#instructions]] section, keep in mind the [[#rubric]] section we are using to evaluate your homework. Feel free to implement the parts in any order that makes sense to you.
