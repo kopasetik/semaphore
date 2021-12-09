@@ -4,6 +4,12 @@
   "description": "client for the traffic light challenge",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "north": "yarn parcel src/index.html -p 1155",
+    "south": "yarn parcel src/south.html -p 4321",
+    "east": "yarn parcel src/east.html",
+    "west": "yarn parcel src/west.html -p 4000"
+  },
   "dependencies": {
     "lodash": "^4.17.21",
     "socket.io-client": "^4.4.0"

@@ -1,6 +1,6 @@
 const {format}= require('date-fns')
 const createParams = require('../createParams.js')
-//const sendParams = require('../sendParams.js')
+const sendSignals = require('../sendSignals.js')
 //const updatePattern = require('../updatePattern.js')
 
 describe('create params', () =>{
@@ -27,7 +27,7 @@ describe('create params', () =>{
     })
 }) 
 
-describe('send schedule params', () =>{
+describe('send signals', () =>{
     it('', () =>{
             
     })

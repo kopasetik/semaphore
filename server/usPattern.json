@@ -1,0 +1,8 @@
+[
+    {"east":"y","west":"y","north":"r","south":"r"},
+    {"east":"r","west":"r","north":"r","south":"r"},
+    {"east":"r","west":"r","north":"g","south":"g"},
+    {"east":"r","west":"r","north":"y","south":"y"},
+    {"east":"r","west":"r","north":"r","south":"r"},
+    {"east":"g","west":"g","north":"r","south":"r"}
+]
