@@ -1,0 +1,14 @@
+{
+  "name": "traffic-light-client",
+  "version": "0.0.0",
+  "description": "client for the traffic light challenge",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "socket.io-client": "^4.4.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}
